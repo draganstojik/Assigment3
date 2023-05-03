@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"?\></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+
+        body {
+            color: darkgrey;
+            font-family: sans-serif;
+        }
+        #grid-container {
+            max-width: 960px;
+            width: 90%;
+            display: grid;
+            row-gap: 8px;
+            margin: 0 auto;
+
+            
+        }
+
+        #container {
+            display: grid;
+
+            grid-template-rows: 120px 120px;
+
+            column-gap: 50px;
+            row-gap: 100px;
+            box-sizing: border-box;
+            justify-content: space-between;
+        }
+
+        .tile {
+            background: linear-gradient(rgb(17, 181, 236) 82%, rgb(244, 243, 243) 82%);
+            width:200px;
+            height: 120px;
+            border-radius: 5%;
+            text-align: center;
+            line-height: 5px;
+            
+        }
+
+        header>p {
+            font-family: sans-serif;
+            font-size: larger;
+            margin-bottom: 60px;
+        }
+
+        footer {
+            margin: 80px auto
+        }
+
+        @media screen and (max-width: 2400px) {
+            #container{
+            grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #container{
+            grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            #container{
+            grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="grid-container">
+        <header><p>Gallery Heading</p></header>
+        <main>
+            <div id="container">
+                <div class="tile">
+                    <img src="placeholder-image.png" alt="placeholder-image">Image Title
+                </div>
+                <div class="tile">
+                    <img src="placeholder-image.png" alt="placeholder-image">Image title
+                </div>
+                <div class="tile">
+                    <img src="placeholder-image.png" alt="placeholder-image">Image title
+                </div>
+                <div class="tile">
+                    <img src="placeholder-image.png" alt="placeholder-image">Image title
+                </div>
+                <div class="tile">
+                    <img src="placeholder-image.png" alt="placeholder-image">Image title
+                </div>
+                <div class="tile">
+                    <img src="placeholder-image.png" alt="placeholder-image">Image title
+                </div>
+                <div class="tile">
+                    <img src="placeholder-image.png" alt="placeholder-image">Image title
+                </div>
+                <div class="tile">
+                    <img src="placeholder-image.png" alt="placeholder-image">Image title
+                </div>
+                <div class="tile">
+                    <img src="placeholder-image.png" alt="placeholder-image">Image title
+                </div>
+                <div class="tile">
+                    <img src="placeholder-image.png" alt="placeholder-image">Image title
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a lacinia nisi, nec tristique
+                sem. Cras id tellus ac mauris posuere varius. Pellentesque vel mi justo. Aenean malesuada 
+                purus eu lacinia finibus. Praesent commodo euismod odio, eu pharetra nulla dignissim nec.
+                Ut id nulla augue. Duis ultricies euismod purus, ut lobortis tortor semper a. Nam eleifend
+                accumsan elit, in elementum lacus. Nunc varius imperdiet nisi, eget pretium augue molestie a. 
+                Nullam ut malesuada enim. Integer non velit fringilla, porta ex vitae, porttitor velit. Ut
+                luctus lacinia libero a scelerisque. Ut ullamcorper arcu at mauris ullamcorper tempor.
+            </p>
+        </footer>
+    </div>
+</body>
